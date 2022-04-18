@@ -1,0 +1,23 @@
+---
+title: '2022-04-18'
+author: "ryotoitoi"
+date: '2022-04-18'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# Get the Data
+
+# Read in with tidytuesdayR package 
+# Install from CRAN via: install.packages("tidytuesdayR")
+# This loads the readme and all the datasets for the week of interest
+
+# Either ISO-8601 date or year/week works!
+
+data <- tidytuesdayR::tt_load('2022-04-12')
+data <- tidytuesdayR::tt_load(2022, week = 15)
+```
+
+```{r}
+head(tuesdata)
+```
