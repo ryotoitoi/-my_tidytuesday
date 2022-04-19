@@ -2,7 +2,7 @@
 title: '2022-04-18'
 author: "ryotoitoi"
 date: '2022-04-18'
-output: html_document
+output: html_notebook
 ---
 
 ```{r setup, include=FALSE}
@@ -14,10 +14,10 @@ output: html_document
 
 # Either ISO-8601 date or year/week works!
 
-data <- tidytuesdayR::tt_load('2022-04-12')
-data <- tidytuesdayR::tt_load(2022, week = 15)
+tuesdata <- tidytuesdayR::tt_load('2022-04-12')
 ```
 
 ```{r}
-head(tuesdata)
+print(dim(tuesdata))
+head(tuesdata$fuel_gdp)
 ```
